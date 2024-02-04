@@ -1,5 +1,5 @@
 package winterpep_github;
-//Lecture 12 - Exception Handling In Java Explained (Part 2)
+//Lecture 13 - Exception Handling In Java Explained (Part 2)
 
 import java.io.File;
 import java.io.IOException;
