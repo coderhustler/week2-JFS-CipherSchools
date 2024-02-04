@@ -1,0 +1,37 @@
+Lecture 10 - NOTES - Compiled Vs Interpreted, BiteCoded
+
+1. After Compilation, Java files are converted into intermediate files also called as .class files.
+
+2. These .class files contains another format called - ByteCode.
+
+3. ByteCode is for java engine, ie JVM uses this ByteCode. It is not for us.
+
+4. It is ByteCode which Converts java platoform independent
+
+
+5. Compiled Language - In Compiled Language, for eg in java,oython,Csharp
+
+6. Interpreted Language - In Interpreted languages, for eg in html, there is no ByteCode. It is directly converted into machine code and translated line-by-line.
+
+7. Advantages of Compiled Language:
+I. Security - In Interpreted languages, we have to deliver actual source code directly to client
+
+II. Synatx errors are checked, so there is very less probability of compile time errors, exceptions.
+
+III. .java -> compiled to -> .class
+JVM reads Bytecode file line-by-line. This is called Interpretation. That's why java is both COMPILED & INTERPRETED.
+
+IV. In Python we have two options:
+a) Either we can directly run it.
+b) Or we can convert it to .pyc files for interpretation
+
+8. How Java works behind the scenes?
+
+I. .class -> Class Loader (A prog that loads all classes used in your program/into memory COMMAND to check CLASSLOADER - open cmd and type 'java -verbose'), 
+java.lang - Here, 'lang' is default package. -> ByteCode Verifier (A soft prog to check whether bytecode is generated properly or not. It checks if memory required by bytecode is available or not, if access violation is there or not, if temp) -> Once the ByteCode Verifier successfully verifies ByteCode it is then passed to Interpreter. -> Interpreter runs code line-by-line at runtime(JRE libraries) -> Output is generated.
+
+
+
+
+
+
