@@ -2,17 +2,18 @@ package winterpep_github;
 // Lecture 14 - Collection Framework In Java (Part 1)
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 /*
 Collection Framework - Definition, Usage, Hierarchy
 1. ArrayList - Dynamic, Strongly Typed (homo (strongly typed) or hetro (loosly typed) data types), Versatile than arrays
-
+2. Vectors - Code written on next program
  */
 public class lecture14 {
     public static void main(String[] args) {
 
-        // NON GENERIC VERSION of ArrayList
+        // NON-GENERIC VERSION of ArrayList
          ArrayList cart0=new ArrayList();
          List cart1=new ArrayList();
 
@@ -42,6 +43,20 @@ public class lecture14 {
         // UPDATE using .set() Method
         states.set(2,"UK");
         System.out.println("After Updation: "+states);
-        
+
+        String t = states.remove(3);
+        System.out.println("State removed: "+t);
+
+        // SORTING using Comparator
+        states.sort(Comparator.naturalOrder()); // ascending order A->Z a->z 65-90 99 acc to ASCII values
+        System.out.println("After Sorting: "+states);
+
+        // .contains() method
+        System.out.println("Is HP there? "+states.contains("HP"));
+
+        // .indexOf() method
+        System.out.println("UP is at: "+states.indexOf("UP"));
+        System.out.println("Is list empty? "+states.isEmpty());
+
     }
 }
